@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Личный сайт студента GeekBrains</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+
+
+	   function Play()
+     {
+       var k=0;
+       alert("Над избушкой висит хлеба краюшка.");
+       var otvet=prompt("Введите правильный номер ответа: 1 - луна, 2 - солнце, 3 - петух");
+       otvet=parseInt(otvet);
+
+       if (otvet!=1)  
+       {
+
+         alert("К сожалению не угадали. Вам даются еще 3 попытки:");
+
+         alert("1. Не лает, не кусает, а в дом не пускает.");
+         var otvet=prompt("Введите правильный номер ответа:: 1 - секьюрити, 2 - замок, 3 - кошка");
+         otvet=parseInt(otvet);
+         if (otvet==2) k=k+1;
+      
+         alert("2. Зимой и летом одним цветом");
+         var otvet=prompt("Введите правильный номер ответа: 1 - черно-белый телевизор, 2 - ель, 3 - шуба");
+         otvet=parseInt(otvet);
+         if (otvet==2) k=k+1;
+      
+         alert("3. Без рук, без топоренка построена избенка");
+         var otvet=prompt("Введите правильный номер ответа: 1 - гнездо, 2 - шапка, 3 - сугроб");
+         otvet=parseInt(otvet);
+         if (otvet==1) k=k+1;
+         alert("Вы угадали "+k+" из 3-х ");
+         } 
+       else
+       {
+         alert("Вы угадали! Поздравляем!")
+        }
+
+        alert("Игра окончена. Спасибо.");
+     }
+             
+ 
+	 </script>
+
+ </head>
+<body>
+	<div id="header">
+		<a href="index.html">Главная</a><span>/</span>
+		<a href="puzzle.html">Загадки</a><span>/</span>
+		<a href="#">Угадайка</a><span>/</span>
+		<a href="guess2.html">Угадайка мультиплеер</a><span>/</span>
+	</div>
+<div id="content">
+	<h1>Личный сайт студента GeekBrains</h1>	
+    <div id="center">
+		<h3>Угадай-ка загадки</h3>
+        </div id="box">
+          <p><h5>Вам будет предложено несколько загадок</h5></p>
+
+          <br></br>
+          <a href="#" onclick="Play();">Начать игру</a>
+        </div>
+
+<div id="footer">
+	Copyright © 2016 <a href="https://geekbrains.ru/"> GeekBrains </a>
+</div>
+
+</body>
+</html>
